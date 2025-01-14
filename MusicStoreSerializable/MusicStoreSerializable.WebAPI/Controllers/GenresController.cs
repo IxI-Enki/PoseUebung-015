@@ -22,11 +22,7 @@ namespace MusicStoreSerializable.WebAPI.Controllers
                 public Logic.Models.Genre? Get( int id )
                 {
                         var context = Logic.DataContext.Factory.CreateMusicStoreContext( );
-
-                        var result = context.GenreSet.FirstOrDefault( g => g.Id == id );
-
-                        return result;
-                        // return context.GenreSet.FirstOrDefault( g => g.Id == id );
+                        return context.GenreSet.FirstOrDefault( g => g.Id == id );
                 }
 
                 // POST api/<GenresController>
@@ -51,7 +47,6 @@ namespace MusicStoreSerializable.WebAPI.Controllers
                                 updateItem.CopyProperties( item );
                                 context.SaveChanges( );
                         }
-
                 }
 
                 // DELETE api/<GenresController>/5
@@ -65,7 +60,6 @@ namespace MusicStoreSerializable.WebAPI.Controllers
                                 context.GenreSet.Remove( deleteItem );
                                 context.SaveChanges( );
                         }
-
                 }
         }
 }
