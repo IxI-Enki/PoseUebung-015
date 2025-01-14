@@ -55,6 +55,7 @@ namespace MusicStoreSerializable.WebAPI.Controllers
                 {
                         var context = Logic.DataContext.Factory.CreateMusicStoreContext( );
                         var deleteItem = context.GenreSet.FirstOrDefault( g => g.Id == id );
+
                         if(deleteItem != null)
                         {
                                 context.GenreSet.Remove( deleteItem );
