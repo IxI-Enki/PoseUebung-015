@@ -4,3 +4,7 @@
 
 /.vs
 /MusicStoreSerializable/.vs/MusicStoreSerializable
+/MusicStoreSerializable/MusicStoreSerializable.ConApp/bin/Debug/net8.0
+/MusicStoreSerializable/MusicStoreSerializable.ConApp/obj
+/MusicStoreSerializable/MusicStoreSerializable.Logic/obj
+/MusicStoreSerializable/MusicStoreSerializable.WebAPI/obj
