@@ -1,6 +1,6 @@
 @MusicStoreSerializable.WebAPI_HostAddress = http://localhost:5253
 
-GET {{MusicStoreSerializable.WebAPI_HostAddress}}/weatherforecast/
+GET {{MusicStoreSerializable.WebAPI_HostAddress}}/api/genres/
 Accept: application/json
 
 ###
