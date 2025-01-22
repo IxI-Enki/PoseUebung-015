@@ -1,5 +1,5 @@
 ﻿using MusicStoreSerializable.Logic.DataContext;
-using MusicStoreSerializable.Logic.Models;
+using MusicStoreSerializable.Logic.Models;      
 
 namespace MusicStoreSerializable.Logic.Contracts
 {

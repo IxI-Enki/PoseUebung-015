@@ -12,19 +12,23 @@
                         Console.WriteLine( $"Loaded {context.AlbumSet.Count} albums." );
                         Console.WriteLine( $"Loaded {context.TrackSet.Count} tracks." );
 
+                        /*
+                       //    if(context.GenreSet.Any( g => g.Name != "MyGenre" ))
+                       //    {
+                       //            var genre = new Logic.Models.Genre
+                       //            {
+                       //                    Name = "MyGenre"
+                       //            };
+                       //            context.GenreSet.Add( genre );
+                       //    }
+                       //
+                       // Console.WriteLine( "Saving changes..." );
+                       // context.SaveChanges( );
+                       // Console.WriteLine( "Done." );
+                       //
+                       */
 
-                        if(context.GenreSet.Any( g => g.Name != "MyGenre" ))
-                        {
-                                var genre = new Logic.Models.Genre
-                                {
-                                        Name = "MyGenre"
-                                };
-                                context.GenreSet.Add( genre );
-                        }
-
-                        Console.WriteLine( "Saving changes..." );
-                        context.SaveChanges( );
-                        Console.WriteLine( "Done." );
+                        Console.ReadLine();
                 }
         }
 }

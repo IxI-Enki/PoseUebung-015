@@ -137,7 +137,7 @@ namespace MusicStoreSerializable.Logic.DataContext
 
                         ValidateRelationships( );
                         File.WriteAllText( DbFile , JsonSerializer.Serialize<MusicStoreContext>( this , JsonOptions ) );
-                }
+                } 
 
                 #endregion methods
         }
